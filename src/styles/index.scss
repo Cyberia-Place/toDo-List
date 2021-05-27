@@ -11,3 +11,18 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    background-color: #F4F4F4;
+}
+
+.todo-header {
+    color: #E1BCBC;
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
+}
+
+.table {
+    height: 200px;
+    width: 200px;
+}
