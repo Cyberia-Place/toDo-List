@@ -24,7 +24,6 @@ body {
 }
 
 .table {
-    min-height: 200px;
     width: 600px;
 }
 
@@ -36,4 +35,14 @@ body {
     outline: none;
     font-size: 20px;
     color: #B8B1B1;
+    position: relative;
+}
+
+.input-button-style {
+    border-style: none;
+    border-color: #E1E1E1;
+    outline: none;
+    color: #B8B1B1;
+    position: absolute;
+    right: 5px;
 }

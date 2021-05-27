@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 
-let List = [];
 export const ToDoList = () => {
 	const [todoList, setTodoList] = useState([]);
 	const [todo, setTodo] = useState("");
 
 	const userInterface = todoList.map((element, index) => {
 		return (
-			<div key={index} className="input-style px-5">
+			<div key={index} className="input-style px-5 py-2">
 				{todoList[index]}
+				<button
+					type="button"
+					className="input-button-style bg-white"
+					onClick={() => deleteToDo(index)}>
+					X
+				</button>
 			</div>
 		);
 	});
@@ -16,6 +21,12 @@ export const ToDoList = () => {
 	const submitFunction = event => {
 		setTodoList([...todoList, todo]);
 		event.preventDefault();
+	};
+
+	const deleteToDo = index => {
+		var array = [...todoList];
+		array.splice(index, 1);
+		setTodoList(array);
 	};
 
 	return (
