@@ -42,7 +42,11 @@ export const ToDoList = () => {
 				<input
 					type="text"
 					className="rounded-0 input-style px-5"
-					placeholder="What needs to be done?"
+					placeholder={
+						todoList.length != 0
+							? "What needs to be done?"
+							: "No tasks, add a task"
+					}
 					onChange={event => setTodo(event.target.value)}
 				/>
 				{userInterface}
