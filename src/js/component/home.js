@@ -6,7 +6,9 @@ export function Home() {
 	return (
 		<div>
 			<p className="todo-header display-3">toDo List</p>
-			<ToDoList />
+			<div className="d-flex justify-content-center">
+				<ToDoList />
+			</div>
 		</div>
 	);
 }
