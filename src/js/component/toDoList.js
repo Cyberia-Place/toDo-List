@@ -50,6 +50,9 @@ export const ToDoList = () => {
 					onChange={event => setTodo(event.target.value)}
 				/>
 				{userInterface}
+				<div className="items-left-div px-3 py-3">
+					{todoList.length} items left
+				</div>
 			</div>
 		</form>
 	);
